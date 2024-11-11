@@ -30,7 +30,7 @@ const Header = () => {
 
     return (
         <div className={classNames('Header')}>
-            <button onClick={toggleCardFlip}>Транзакции</button>
+            <button onClick={toggleCardFlip}>Кошелек</button>
             <span>{balance}</span>
         </div>
     )
