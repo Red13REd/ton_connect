@@ -1,0 +1,46 @@
+.Wallet {
+  height: 100%;
+  width: max-content;
+
+  padding: 3rem;
+  outline: 1px solid rgba(0, 255, 255, 0.59);
+  border-radius: 1rem;
+  background-color: #e5e7eb;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:3rem;
+
+  .Header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+  }
+
+  .AddressWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .Address {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+
+      div {
+        display: flex;
+        align-items: flex-end;
+        gap: 1rem;
+      }
+
+      span:first-child {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+
+  --header-height: 5rem;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+
+  display: flex;
+  height: 100vh;
+  top: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+button {
+  background-color: #0098EA;
+  color: #FFFFFF;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.16);
+  padding: 8px 16px 8px 12px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border: none;
+  border-radius: 100vh;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  width: fit-content;
+
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
