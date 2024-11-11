@@ -1,4 +1,3 @@
-@use '@/app/mixins.scss';
 
 .Transactions {
   height: 100%;
@@ -14,10 +13,6 @@
   align-items: center;
   gap: 3rem;
 
-  > button {
-    @include mixins.btn;
-  }
-
   .Header {
     width: 100%;
     display: flex;
@@ -31,6 +26,27 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 1rem;
+
+    > button {
+      background-color: #0098EA;
+      color: #FFFFFF;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.16);
+      padding: 8px 16px 8px 12px;
+      display: flex;
+      align-items: center;
+      height: 40px;
+      border: none;
+      border-radius: 100vh;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 18px;
+      width: fit-content;
+
+
+      &:disabled {
+        opacity: 0.5;
+      }
+    }
 
     > div {
       display: flex;
